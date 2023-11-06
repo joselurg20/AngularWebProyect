@@ -6,7 +6,7 @@
     </button>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu Hamburguesa</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
@@ -19,5 +19,13 @@
     </div>
   </div>
 </nav>
+
 <button class="btn">Podria ser un botón</button>
+
+<app-note [note]="{title:'test',descripcion:'test'}" (editNote)="this.editingNote($event)" (removeNote)="this.removingNote($event)"></app-note>
+<app-note [note]="{id:2, title:'hola',descripcion:'mundo'}" (editNote)="this.editingNote($event)" (removeNote)="this.removingNote($event)"></app-note>
+
+<app-button [clase]="'btn btn-danger'" [texto]="'Alerta'"
+(action)="alerta()"></app-button>
+
 <router-outlet></router-outlet>
