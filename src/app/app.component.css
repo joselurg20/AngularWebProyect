@@ -1,0 +1,9 @@
+.btn{
+    background: linear-gradient(pink 50%,cyan );
+    border-radius: 20px;
+    text-align: center;
+    border-style: none;
+    color: white ;
+    font-size: 20px;
+
+}
