@@ -6,19 +6,19 @@ import { AppComponent } from './app.component';
 import { NoteComponent } from './components/note/note.component';
 import { ButtonComponent } from "./components/button/button.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
+import { NotesService } from './services/notes.service';
 
 @NgModule({
     declarations: [
-        AppComponent,
-        NoteComponent
+        AppComponent
     ],
-    providers: [],
+    providers: [NotesService],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
         ButtonComponent,
         NavbarComponent
-    ]
+        ],
 })
 export class AppModule { }

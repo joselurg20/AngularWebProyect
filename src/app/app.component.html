@@ -1,15 +1,3 @@
 
 <app-navbar></app-navbar>
-
-<!--
-  <button class="btn">Podria ser un botón</button>
--->
-
-<app-note [note]="{title:'test',descripcion:'test'}" (editNote)="this.editingNote($event)"
-  (removeNote)="this.removingNote($event)"></app-note>
-<app-note [note]="{id:2, title:'hola',descripcion:'mundo'}" (editNote)="this.editingNote($event)"
-  (removeNote)="this.removingNote($event)"></app-note>
-
-<app-button [clase]="'btn btn-danger'" [texto]="'Alerta'" (action)="alerta()"></app-button>
-
 <router-outlet></router-outlet>
