@@ -10,6 +10,10 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+logout() {
+throw new Error('Method not implemented.');
+}
+loginS: any;
 
   constructor() { }
 
