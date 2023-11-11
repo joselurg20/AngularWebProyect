@@ -1,12 +1,10 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NotesComponent } from './pages/notes/notes.component';
-import { NewComponent } from './pages/new/new.component';
+import { LoginGuard } from './guards/login.guard';
 import { LoginComponent } from './pages/login/login.component';
 import { Error404Component } from './pages/error404/error404.component';
-import { LoginGuard } from './guards/login.guard';
-
-
+import { NgModule } from '@angular/core';
+import { NewComponent } from './pages/new/new.component';
 
 const routes: Routes = [
   {path:"home", component:NotesComponent ,
