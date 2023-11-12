@@ -1,0 +1,67 @@
+
+  .note-reader {
+    
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .list-group{
+    background-color: white;
+
+  }
+
+  .note-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .note {
+
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .note-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+
+  .note-actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  .btn {
+    cursor: pointer;
+  }
+
+  .btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+  .btn svg {
+    margin-right: 10px;
+  }
+
+  .btn{
+    display: inline;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    gap: 10px; /* Agrega espacio entre los elementos */
+    
+  }

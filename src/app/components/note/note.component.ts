@@ -1,5 +1,8 @@
+// note.component.ts
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { INote } from '../../model/INote';
+import { NotesService } from '../../services/notes.service';
+
 
 @Component({
   selector: 'app-note',
@@ -7,32 +10,33 @@ import { INote } from '../../model/INote';
   styleUrls: ['./note.component.css']
 })
 export class NoteComponent implements OnInit {
-   @Input('note') public note:INote = {
-    id:-1,
-    title:'',
-    description:''
+  @Input('note') public note: INote = {
+    id: -1,
+    title: '',
+    description: '',
+   
   };
 
   @Output() editNote = new EventEmitter<INote>();
   @Output() removeNote = new EventEmitter<INote>();
 
-  constructor() {
-   }
+  constructor() {}
 
   ngOnInit(): void {
-    console.log("NGONINIT")
+    console.log("NGONINIT");
   }
-  ngAfterContentInit(){
+
+  ngAfterContentInit() {
     console.log("NGAFTERCONTENTINIT");
   }
 
-  public editNoteFn(){
-    if(this.note.id==-1) return;
+  public editNoteFn() {
+    if (this.note.id === -1) return;
     this.editNote.emit(this.note);
   }
-  public removeNoteFn(){
-    if(this.note.id==-1) return;
+
+  public removeNoteFn() {
+    if (this.note.id === -1) return;
     this.removeNote.emit(this.note);
   }
-
 }

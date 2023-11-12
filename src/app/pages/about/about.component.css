@@ -1,0 +1,60 @@
+  .header {
+    text-align: center;
+    padding: 60px;
+    background-color: #E7E7E8;
+
+  }
+  
+  
+  .service {
+    text-align: center;
+    padding: 80px;
+    background-color: white;
+    margin-bottom: 10px;
+  }
+  
+  .container {
+    height: 100vh; /* 100% de la altura de la ventana (viewport height) */
+    padding: 20px;
+
+  }
+  
+  .card {
+    border-style: none;
+    font-style: none;
+    list-style: none;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100vh; /* 100% de la altura de la ventana (viewport height) */
+    display: block;
+  }
+  
+
+  
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+/*
+.contenedor::-webkit-scrollbar {
+    -webkit-appearance: menulist;
+}
+
+.contenedor::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.contenedor::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+
+.contenedor::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius:20px;
+    border: 2px solid #f1f2f3;
+}
+
+.contenedor::-webkit-scrollbar-track {
+    border-radius: 20px;  
+}*/
