@@ -6,3 +6,13 @@ asl-google-signin-button div{
     text-align: center;
 
 }
+
+/* styles.css */
+
+/* Agregar estilos para el modo oscuro */
+.dark-mode {
+    background-color: #15202b; /* Cambia el color de fondo a tu preferencia para el modo oscuro */
+    color: #fff; /* Cambia el color del texto a tu preferencia para el modo oscuro */
+    /* Agrega otros estilos para el modo oscuro según tus necesidades */
+  }
+  
